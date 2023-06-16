@@ -111,6 +111,10 @@ body a{
     content: "-";
     padding: 0 10px;
   }
+  .logo_about {
+    padding-top: 0 !important;
+    padding-bottom: 80px;
+  }
 }
 body li{
   list-style: none;
@@ -428,7 +432,8 @@ i.fas.fa-bars.nav-bar{
 }
 
 .title-highlights h3,
-.title-services h3{
+.title-services h3,
+.text-about h3{
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
@@ -437,7 +442,8 @@ i.fas.fa-bars.nav-bar{
 }
 
 .title-highlights p,
-.title-services p{
+.title-services p,
+.text-about p{
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
@@ -460,4 +466,100 @@ section.home-product-tab {
 }
 .text-services {
   padding: 36px 15px 24px 15px;
+}
+.services-item {
+  position: relative;
+}
+
+.txt-services-item {
+  position: absolute;
+  bottom: 0;
+  padding-left: 72px;
+  padding-bottom: 75px;
+  padding-right: 72px;
+}
+
+button {
+  width: 150px;
+}
+
+.txt-services-top {
+  padding-bottom: 70px;
+}
+
+h3 {}
+
+.txt-services-top h3 {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 50px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FCFBFA;
+  margin-bottom: 8px;
+}
+
+.txt-services-top p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #FCFBFA;
+}
+
+button {}
+
+.txt-services-bottom button {
+  width: 100%;
+  padding: 15px 90px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  background: rgba(0,0,0,0);
+  border: 1px solid #ccc;
+}
+.content-about{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-right img {
+  width: 100%;
+}
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FCFBFA;
+  background: #000;
+}
+.about-right {
+  padding: 0 !important;
+}
+@media(max-width: 1200px){
+  .logo_about {
+    padding-top: 180px;
+  }
+}
+@media(min-width: 1200px){
+  .about-left {
+    padding: 310px 115px 59px 115px;
+  }
+}
+@media(min-width: 1500px){
+  .about-left {
+    padding: 385px 115px 59px 115px;
+  }
+}
+.logo_about img {
+  width: 154px;
+  height: 67px;
+}
+.title-about {
+  padding-top: 36px;
+  padding-bottom: 24px;
 }

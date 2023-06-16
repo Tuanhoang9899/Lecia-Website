@@ -50,7 +50,38 @@ $( document ).ready(function () {
                     nav: true,
                 },
                 992: {
-                    items: 1.5
+                    items: 1.4
+                }
+            },
+        });
+    }
+
+    if ($(".content-blog .blog_item").length) {
+        $(".content-blog").owlCarousel({
+            items: 2,
+            nav: false,
+            dots: false,
+            autoplay:false,
+            margin:12,
+            loop:false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                320: {
+                    items: 1,
+                    nav: true,
+                },
+                480: {
+                    items: 1,
+                    nav: true,
+                },
+                768: {
+                    items: 1,
+                    nav: true,
+                },
+                992: {
+                    items: 2.4
                 }
             },
         });
