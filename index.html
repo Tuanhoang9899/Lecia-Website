@@ -34,12 +34,15 @@
                 <h3>Subscribe to Lecia's Newsletters to get 10% Off today!</h3>
             </div>
             <div class="header-right">
-                <ul class="header-right_ul">
-                    <li class="menu-item--top"><a href="">Search</a> <i class="fas fa-search item-search"></i></li>
-                    <li class="menu-item--top"><a href="">Account</a></li>
-                    <li class="menu-item--top"><a href="">Wishlist</a></li>
-                    <li class="menu-item--top"><a href="">Cart</a></li>
-                </ul>
+                <div class="menu_d-none">
+                    <ul class="header-right_ul">
+                        <li class="menu-item--top"><a href="">Search</a> <i class="fas fa-search item-search"></i></li>
+                        <li class="menu-item--top"><a href="">Account</a></li>
+                        <li class="menu-item--top"><a href="">Wishlist</a></li>
+                        <li class="menu-item--top"><a href="">Cart</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars nav-bar"></i>
             </div>
         </div>
         <div class="container">
@@ -141,14 +144,92 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
+                    </ul></div>
             </div>
         </div>
     </div>
 </header>
 
-<main style="height: 500px">
+<main class="main-layout">
+    <section class="home-slider">
+        <div class="home-slider-main">
+            <img src="/img/banner_index.png" alt="">
+            <div class="txt_benner-home">
+                <div class="txt-benner">
+                    <div class="txt-banner-top">
+                        <p>Explore</p>
+                        <h3>SPRING SUMMER 23</h3>
+                    </div>
+                    <div class="txt-banner-bottom">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-highlights container-fluid">
+        <div class="title-highlights">
+            <h3>Highlights</h3>
+            <p>View all RTW</p>
+        </div>
+        <div class="item-highlights">
+            <div class="pos-highlights col-lg-4">
+                <img src="/img/pos-highlights.png" alt="">
+            </div>
+            <div class="pos-highlights col-lg-4">
+                <img src="/img/pos-highlights.png" alt="">
+            </div>
+            <div class="pos-highlights col-lg-4">
+                <img src="/img/pos-highlights.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="home-product-tab container-fluid">
+        <div class="home-product-tab-img col-lg-8">
+            <img src="/img/tab_img.png" alt="">
+        </div>
+        <div class="collection col-lg-4">
+            <div class="collection-top">
+                <h3>Latest Collection</h3>
+                <p>View all Collections</p>
+            </div>
+            <div class="collection-bottom">
+                <div class="title_collection-bottom">
+                    <h3>SPRING SUMMER 23</h3>
+                    <p>Bridal</p>
+                </div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="title-services container-fluid">
+            <div class="text-services">
+                <h3>Our Services</h3>
+                <p>View all services</p>
+            </div>
+        </div>
+        <div class="content-services owl-carousel">
+            <div class="services-item">
+                <img src="/img/services.png" alt="">
+                <div class="txt-services-item">
+                    <div class="txt-services-top">
+                        <h3>Rent</h3>
+                        <p>RENTAL</p>
+                    </div>
+                    <div class="txt-services-bottom">
+                        <a href=""><button>Visit our store</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-item">
+                <img src="/img/services.png" alt="">
+            </div>
+            <div class="services-item">
+                <img src="/img/services.png" alt="">
+            </div>
+        </div>
+    </section>
 
 </main>
 
@@ -158,12 +239,12 @@
             <div class="appointment col-lg-5">
                 <p class="appointment">Book an appointment</p>
                 <form action="/subscribe" method="post">
-                    <input type="email" id="email" name="email" required placeholder="Đăng ký" > <i class="far fa-user-circle icon-user"></i>
-                    <button type="submit">Đăng ký</button>
+                    <input type="email" id="email" name="email" required placeholder="Content" > <i class="far fa-user-circle icon-user"></i>
+                    <button type="submit">Proceed</button>
                 </form>
             </div>
             <div class="footer_content col-lg-7">
-                <div class="col-lg-4 col-md-12 col-12 col-foo-1">
+                <div class="col-lg-3 col-md-6 col-12 col-foo-1">
                     <div class="col-inner">
                         <h3 class="headtitle">Customer Concierge</h3>
                         <div class="div-text">
@@ -176,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12 col-foo-2">
+                <div class="col-lg-3 col-md-6 col-12 col-foo-2">
                     <div class="col-inner">
                         <h3 class="headtitle">Privacy</h3>
                         <div class="div-text">
@@ -189,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12 col-foo-3">
+                <div class="col-lg-3 col-md-6 col-12 col-foo-3">
                     <div class="col-inner">
                         <h3 class="headtitle">Lecia</h3>
                         <div class="div-text">
@@ -202,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12 col-foo-4">
+                <div class="col-lg-3 col-md-6 col-12 col-foo-4">
                     <div class="col-inner">
                         <h3 class="headtitle">Social</h3>
                         <div class="div-text">
@@ -218,6 +299,16 @@
             </div>
         </div>
     </div>
+    <div class="modal_menu-mobile">
+        <div class="menu-mobile">
+            <div class="logo-mobile">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"> </div>
 </footer>
 </body>
 </html>
