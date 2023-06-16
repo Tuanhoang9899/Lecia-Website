@@ -226,6 +226,9 @@ li.menu_item--bottom:hover >a::after {
   background-color: #ccc;
 }
 ul.groupmenu-drop.slidedown {
+  padding: 0 0 20px 0;
+  z-index: 999;
+  background: #fff;
   position: absolute;
   right: 0;
   left: 0;
