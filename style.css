@@ -142,6 +142,7 @@ ul.menu-center_ul {
 }
 
 li.menu_item--bottom a {
+  position: relative;
   font-weight: 300;
   font-size: 15px;
   line-height: 15px;
@@ -196,14 +197,12 @@ ul.groupmenu-drop{
   display: flex;
   justify-content: space-between;
 }
-li.menu_item--bottom{
-  position: relative;
-}
-li.menu_item--bottom:hover::after {
+
+li.menu_item--bottom:hover >a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px;
   width: 100%;
   height: 2px;
   background-color: #ccc;
