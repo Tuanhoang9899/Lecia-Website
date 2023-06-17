@@ -81,6 +81,9 @@ $( document ).ready(function () {
                     nav: true,
                 },
                 992: {
+                    items: 2
+                },
+                1200: {
                     items: 2.4
                 }
             },
