@@ -89,4 +89,26 @@ $( document ).ready(function () {
             },
         });
     }
+
+    // Kiểm tra kích thước màn hình ban đầu và chuyển vị trí các thẻ div
+    checkScreenWidth();
+    // Xử lý sự kiện khi kích thước màn hình thay đổi
+    $(window).resize(function() {
+        checkScreenWidth();
+    });
+    function checkScreenWidth() {
+        // Kiểm tra kích thước màn hình
+        var screenWidth = $(window).width();
+
+        if (screenWidth <= 992) {
+            // Nếu màn hình là mobile, di chuyển các thẻ div vào mobileContainer
+            $('.header-menu_center').appendTo('.menu-mobile .menu_category .list_menu');
+            $('.top-bar .header-right .header-right_ul').appendTo('.menu-mobile .menu_category .account');
+            $('.item-search_1').appendTo('.list_search_mobile_1');
+            $('.item-search_2').appendTo('.list_search_mobile_2');
+            $('#compareUser .search-select .search .txt_search').appendTo('#txt_search');
+        }
+    }
+
+//end
 });
