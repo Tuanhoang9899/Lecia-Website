@@ -90,7 +90,52 @@ $( document ).ready(function () {
             },
         });
     }
+    if ($("#view_shop_lecia .product_view .img_view img").length) {
+        $("#view_shop_lecia .product_view .img_view").owlCarousel({
+            items: 2,
+            nav: false,
+            dots: false,
+            autoplay:false,
+            margin:12,
+            loop:false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                320: {
+                    items: 1,
+                    nav: true,
+                },
+                480: {
+                    items: 1,
+                    nav: true,
+                },
+                768: {
+                    items: 1,
+                    nav: true,
+                },
+                992: {
+                    items: 2
+                },
+                1200: {
+                    items: 2.3
+                }
+            },
+        });
+    }
+    // tab-content view
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+
+
+    });
     // Kiểm tra kích thước màn hình ban đầu và chuyển vị trí các thẻ div
     checkScreenWidth();
     // Xử lý sự kiện khi kích thước màn hình thay đổi

@@ -1127,6 +1127,185 @@ div#popupHome {
     font-size: 14px;
   }
 }
+/*view_shop*/
+#view_shop_lecia .product_view_title {
+  margin-top: 40px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 200px;
+}
+#view_shop_lecia .product_view_title .name .name_pt{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.02em;
+}
+#view_shop_lecia .product_view_title .name .sku{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+#view_shop_lecia .product_view_title .price .price_pt{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+/*----- Content of Tabs -----*/
+.tab {
+  display:none;
+}
+.tab.active {
+  display:block;
+}
+#view_shop_lecia .product_view_content ul.tab-links {
+  padding: 0;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 25px;
+}
+#view_shop_lecia .product_view_content ul.tab-links li.active a{
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+#view_shop_lecia .product_view_content ul.tab-links li.active a{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+
+}
+#view_shop_lecia .product_view_content ul.tab-links li a {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #868686;
+}
+#view_shop_lecia .product_view_content{
+  margin-bottom: 200px;
+}
+#view_shop_lecia .content_button {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+#view_shop_lecia .content_button .wishlist {
+  text-align: end;
+}
+#view_shop_lecia .content_button .wishlist i{
+  color: #C1C1C1;
+  font-size: 25px;
+}
+#view_shop_lecia .content_button .button_cart {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#view_shop_lecia .content_button .button_cart a{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  padding: 12px 128px;
+}
+#view_shop_lecia .content_button .button_cart a.add_cart{
+  background: #000000;
+}
+#view_shop_lecia .content_button .button_cart a.add_wishlist{
+  color: #000000;
+  border: 1px solid #000000;
+}
+#view_shop_lecia .product_view_related h3.title_related{
+  padding-top: 125px;
+  font-family: 'SVN-Freight Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 50px;
+  /* identical to box height, or 89% */
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #000000;
+}
+#view_shop_lecia .product_view_related .product_items .title_price {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+#view_shop_lecia .product_view_related .product_items{
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 35px;
+}
+#view_shop_lecia .product_view_related .product_items .item a{
+  position: relative;
+}
+#view_shop_lecia .product_view_related .product_items .item h3{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 0;
+}
+#view_shop_lecia .product_view_related .product_items .item .price {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+#view_shop_lecia .product_view_related h3 span{
+  font-family: 'SVN-Freight Display';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 50px;
+  /* identical to box height, or 89% */
+
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Lecia Black */
+
+  color: #000000;
+}
+#view_shop_lecia .product_view_related{
+  background: #F8F7F5;
+  margin-bottom: 10px;
+}
+.product_items {
+  padding-top: 65px;
+}
 
 
 #shop_lecia .product_items {
