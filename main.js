@@ -199,6 +199,19 @@ $( document ).ready(function () {
     $("#vew_cart").click(function() {
         $(".overlay").fadeIn();
     });
+    $("#shop_lecia .filter_shop .filter .plus").click(function (e){
+        $("div#filter_popup").addClass("active");
+        $(".overlay").fadeIn();
+        e.preventDefault();
+    });
+    $("div#filter_popup .btn_close").click(function() {
+        $("div#filter_popup").removeClass("active");
+        $(".overlay").fadeOut();
+    });
+    $(".overlay").click(function() {
+        $("div#filter_popup").removeClass("active");
+        $(this).fadeOut();
+    });
 });
 $(document).ready(function() {
     if (localStorage.getItem('popState') != 'shown'){

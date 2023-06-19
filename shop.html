@@ -39,7 +39,7 @@
                         <li class="menu-item--top"><a href="">Search</a> <i class="fas fa-search item-search"></i></li>
                         <li class="menu-item--top"><a href="">Account</a></li>
                         <li class="menu-item--top"><a href="">Wishlist</a></li>
-                        <li class="menu-item--top"><a href="">Cart</a></li>
+                        <li class="menu-item--top" id="vew_cart"><a href="javascript:0;">Cart</a></li>
                     </ul>
                 </div>
             </div>
@@ -566,6 +566,67 @@
     </section>
 
 </main>
+<div id="filter_popup">
+    <div class="btn_close">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="list_filter">
+        <h2>
+            FILTER
+        </h2>
+        <span class="pra_filter">
+            Apply filter to view Lecia products based on your preferences.
+        </span>
+        <div class="filter_category first">
+            <h3>Category</h3>
+            <div class="list">
+                <ul>
+                    <li><a href="">VEIL</a></li>
+                    <li><a href="">dress</a></li>
+                    <li><a href="">lingerie</a></li>
+                    <li><a href="">glove</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter_category">
+            <h3>Color</h3>
+            <div class="list">
+                <ul>
+                    <li><a href="">Black</a></li>
+                    <li><a href="">White</a></li>
+                    <li><a href="">Grey</a></li>
+                    <li><a href="">Beige</a></li>
+                    <li><a href="">Beige</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter_category">
+            <h3>Size</h3>
+            <div class="list">
+                <ul>
+                    <li><a href="">Xs</a></li>
+                    <li><a href="">S</a></li>
+                    <li><a href="">M</a></li>
+                    <li><a href="">L</a></li>
+                    <li><a href="">XXL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter_category">
+            <h3>For</h3>
+            <div class="list">
+                <ul>
+                    <li><a href="">bride</a></li>
+                    <li><a href="">Bridesmaid</a></li>
+                    <li><a href="">mother of the bride</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="apply_filter">
+            <a href="#"><span>Apply filter</span></a>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container-fluid">
@@ -712,6 +773,169 @@
         </div>
     </div>
     <div class="overlay"> </div>
+
+    <div class="modal-popup" id="popupHome">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <i class="fa fa-times close-poup"></i>
+                <div class="title-popup">
+                    <h3>SUBSCRIBE</h3>
+                    <i>to receive</i>
+                    <h3>10% OFF</h3>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        By subscribing to Lecia Bridal, you will be gifted an exclusive 10% off voucher for Ready-to-wear and Made-to-measure services, applied for both offline and online purchases.
+                    </span>
+                </div>
+                <div class="form-popup">
+                    <form action="/subscribe" method="post">
+                        <input type="email" id="email-popup" name="email" required placeholder="Content" > <i class="far fa-user-circle icon-user"></i>
+                    </form>
+                    <div class="btn-form-poup">
+                        <div class="claim">
+                            Claim 10% Off
+                        </div>
+                        <div class="thks">
+                            No, thanks
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="show_cart">
+        <div class="shop-cart-sidebar-body">
+            <h3>Cart</h3>
+            <div class="vew-cart-top">
+                <div class="shop-cart-sidebar-yes">
+                    <div class="img"><img src="/img/img_view-cart.png" alt=""></div>
+                    <div class="shop_cart-right">
+                        <div class="pro-title-view">
+                            <div class="tille-view-cart">
+                                <span>Cool Bridal Garments</span>
+                                <p>Color: White</p>
+                                <p>Size: M </p>
+                            </div>
+                            <div class="remove_link remove-cart removePro">Remove</div>
+                        </div>
+                        <div class="pro-price-view">
+                            <div class="price_view">$3000</div>
+                            <div class="pro-quantity-view">
+                                <input type="button" value="-" class="qty-btn number-minus">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                       class="quantity-selector" max="100">
+                                <input type="button" value="+" class="qty-btn number-plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart-sidebar-yes">
+                    <div class="img"><img src="/img/img_view-cart.png" alt=""></div>
+                    <div class="shop_cart-right">
+                        <div class="pro-title-view">
+                            <div class="tille-view-cart">
+                                <span>Cool Bridal Garments</span>
+                                <p>Color: White</p>
+                                <p>Size: M </p>
+                            </div>
+                            <div class="remove_link remove-cart removePro">Remove</div>
+                        </div>
+                        <div class="pro-price-view">
+                            <div class="price_view">$3000</div>
+                            <div class="pro-quantity-view">
+                                <input type="button" value="-" class="qty-btn number-minus">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                       class="quantity-selector" max="100">
+                                <input type="button" value="+" class="qty-btn number-plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart-sidebar-yes">
+                    <div class="img"><img src="/img/img_view-cart.png" alt=""></div>
+                    <div class="shop_cart-right">
+                        <div class="pro-title-view">
+                            <div class="tille-view-cart">
+                                <span>Cool Bridal Garments</span>
+                                <p>Color: White</p>
+                                <p>Size: M </p>
+                            </div>
+                            <div class="remove_link remove-cart removePro">Remove</div>
+                        </div>
+                        <div class="pro-price-view">
+                            <div class="price_view">$3000</div>
+                            <div class="pro-quantity-view">
+                                <input type="button" value="-" class="qty-btn number-minus">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                       class="quantity-selector" max="100">
+                                <input type="button" value="+" class="qty-btn number-plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart-sidebar-yes">
+                    <div class="img"><img src="/img/img_view-cart.png" alt=""></div>
+                    <div class="shop_cart-right">
+                        <div class="pro-title-view">
+                            <div class="tille-view-cart">
+                                <span>Cool Bridal Garments</span>
+                                <p>Color: White</p>
+                                <p>Size: M </p>
+                            </div>
+                            <div class="remove_link remove-cart removePro">Remove</div>
+                        </div>
+                        <div class="pro-price-view">
+                            <div class="price_view">$3000</div>
+                            <div class="pro-quantity-view">
+                                <input type="button" value="-" class="qty-btn number-minus">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                       class="quantity-selector" max="100">
+                                <input type="button" value="+" class="qty-btn number-plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart-sidebar-yes">
+                    <div class="img"><img src="/img/img_view-cart.png" alt=""></div>
+                    <div class="shop_cart-right">
+                        <div class="pro-title-view">
+                            <div class="tille-view-cart">
+                                <span>Cool Bridal Garments</span>
+                                <p>Color: White</p>
+                                <p>Size: M </p>
+                            </div>
+                            <div class="remove_link remove-cart removePro">Remove</div>
+                        </div>
+                        <div class="pro-price-view">
+                            <div class="price_view">$3000</div>
+                            <div class="pro-quantity-view">
+                                <input type="button" value="-" class="qty-btn number-minus">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                       class="quantity-selector" max="100">
+                                <input type="button" value="+" class="qty-btn number-plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="vew-cart-bottom">
+                <div class="subtotal">
+                    <strong>Subtotal</strong>
+                    <div class="price-all">$18000</div>
+                </div>
+                <div class="qtt">
+                    <span>Quantity</span>
+                    <p>6</p>
+                </div>
+                <div class="btn-check_out">
+                    <button>Check out</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
