@@ -853,6 +853,193 @@ p.r-more a {
   letter-spacing: 0.01em;
   color: #000000;
 }
+/*///popup*/
+div#popupHome {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.modal-dialog {
+  top: 50%;
+  left: 50%;
+  width: fit-content !important;
+  transform: translate(-50%, -50%);
+  max-width: unset !important;
+  margin: unset !important;
+}
+.modal-content {
+  padding: 88px 96px;
+}
+.modal-body {
+  max-width: 640px;
+}
+.title-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  text-align: center;
+}
+.title-popup h3{
+  margin: 0;
+}
+
+.title-popup i {
+  font-size: 28px;
+  margin: 0 4px;
+}
+
+.title-popup i {
+  font-size: 28px;
+  margin: 0 4px;
+}
+
+.form-popup {
+  padding: 80px 80px 0 80px;
+}
+
+.form-popup input {
+  width: 100%;
+}
+
+.form-popup input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+}
+.btn-form-poup {
+  display: flex;
+  margin-top: 83px;
+  justify-content: space-between;
+}
+
+.claim {
+  padding: 12px 75px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.thks {
+  padding: 12px 75px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.form-popup form {
+  position: relative;
+}
+
+.form-popup .icon-user {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  font-size: 13px;
+}
+.close-poup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+/*view-cart*/
+.show_cart {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  width: auto;
+  background: #F8F7F5;
+  height: 100%;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.shop-cart-sidebar-yes {
+  display: flex;
+  gap: 39px;
+  padding: 24px 0;
+}
+
+.shop_cart-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pro-title-view {
+  display: flex;
+  justify-content: space-between;
+  gap: 137px;
+}
+
+.pro-price-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-cart-sidebar-yes .img img {
+  width: 136px;
+  height: 181px;
+}
+
+.shop-cart-sidebar-body {
+  padding: 72px 36px;
+}
+.shop-cart-sidebar-body h3 {
+  margin: 0;
+}
+.header.scroll {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  right: 0;
+  left: 0;
+  animation: stuckMoveDown .6s;
+  background: #fff;
+}
+@-webkit-keyframes stuckMoveDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes stuckMoveDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+.scroll .header-menu .logo-pc {
+  display: none;
+}
+.show_cart{
+  transform: translateX(100%);
+  transition: .4s;
+}
+.show_cart.active {
+  transform: translateX(0);
+  transition: .4s;
+}
 
 
 /*shop_lecia*/

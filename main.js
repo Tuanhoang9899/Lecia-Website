@@ -17,6 +17,7 @@ $( document ).ready(function () {
     });
     $(".overlay").click(function() {
         $(this).fadeOut();
+        $(".show_cart").removeClass("active");
     });
     if($(window).width() < 991) {
         $(".headtitle").click(function () {
@@ -108,4 +109,34 @@ $( document ).ready(function () {
     }
 
 //end
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+            if (scroll > 128) {
+                $(".header").addClass("scroll");
+            } else {
+                $(".header").removeClass("scroll");
+            }
+        if ($(this).scrollTop() > 200) {
+            $('.back-to-top').fadeIn();
+        } else {
+            $('.back-to-top').fadeOut();
+        }
+    });
+    $("#vew_cart").click(function (){
+       $(".show_cart").addClass("active");
+    });
+    $("#vew_cart").click(function() {
+        $(".overlay").fadeIn();
+    });
+});
+$(document).ready(function() {
+    if (localStorage.getItem('popState') != 'shown'){
+        $('#popupHome').delay(2000).fadeIn();
+        localStorage.setItem('popState','shown')
+    }
+
+    $('.close-poup').click(function(e) // You are clicking the close button
+    {
+        $('#popupHome').fadeOut(); // Now the pop up is hidden.
+    });
 });
