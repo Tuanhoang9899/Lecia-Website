@@ -390,7 +390,7 @@ input#email::-webkit-input-placeholder {
   top: 30px;
   right: 0;
 }
-.div-text ul li {
+.div-text ul li a{
   padding-bottom: 10px;
   font-weight: 300;
   font-size: 17px;
@@ -848,6 +848,180 @@ p.r-more {
 }
 p.r-more a {
   font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+
+/*shop_lecia*/
+#shop_lecia .filter_shop {
+  padding: 0 400px !important;
+  margin: 75px 0 85px 0;
+}
+#shop_lecia .filter_shop .title h2{
+  font-family: 'SVN-Freight Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 50px;
+  /* identical to box height, or 89% */
+
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Lecia Black */
+  margin-bottom: 15px;
+  color: #000000;
+}
+#shop_lecia .filter_shop .title h2 span{
+  font-family: 'SVN-Freight Display';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 50px;
+  /* identical to box height, or 89% */
+
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Lecia Black */
+
+  color: #000000;
+}
+#shop_lecia .filter_shop .title p{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 179% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* Lecia Black */
+
+  color: #000000;
+}
+#shop_lecia .filter_shop .filter {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#shop_lecia .filter_shop .filter span{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  /* Lecia Black */
+
+  color: #000000;
+}
+#shop_lecia .filter_shop .filter .plus{
+  font-size: 25px;
+}
+@media (max-width: 992px) {
+  #shop_lecia .filter_shop{
+    padding: 0 15px !important;
+  }
+  #shop_lecia .filter_shop .title h2{
+    font-size: 24px;
+  }
+  #shop_lecia .filter_shop .title p{
+    font-size: 14px;
+  }
+}
+
+
+#shop_lecia .product_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+img{
+  width: 100%;
+}
+#shop_lecia .item.item_big {
+  display: flex;
+  flex-wrap: wrap;
+}
+#shop_lecia .product_items a{
+  position: relative;
+}
+#shop_lecia .product_items a .title_price {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+}
+#shop_lecia .product_items a h3{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 0;
+}
+#shop_lecia .product_items a .price{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  /* Lecia Black */
+
+  color: #000000;
+}
+#shop_lecia .product_items a .wishlist{
+  top: 2%;
+  z-index: 9;
+  position: absolute;
+  right: 4%;
+}
+#shop_lecia .product_items .item{
+  padding-bottom: 30px;
+}
+#shop_lecia .product_items .item_big .item:nth-of-type(2n+1){
+  padding-left: 0;
+}
+#shop_lecia .product_items .item_big .item:nth-of-type(2n+2){
+  padding-right: 0;
+}
+#shop_lecia .product_items a .wishlist i{
+  color: #C1C1C1;
+  font-size: 25px;
+}
+.paginator {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 80px;
+  margin-top: 45px;
+}
+.paginator .page_number:first-child{
+  display: none;
+}
+.paginator .page_number:nth-child(2) a{
+  border-bottom: 1px solid;
+}
+.paginator .page_number a{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 15px;
   text-align: center;
   letter-spacing: 0.01em;
