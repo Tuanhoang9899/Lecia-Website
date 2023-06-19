@@ -7,6 +7,12 @@ $( document ).ready(function () {
     $(".menu-mobile").click(function(event) {
         event.stopPropagation();
     });
+    $(".filter_popup_shop").click(function(event) {
+        event.stopPropagation();
+    });
+    $("#filter_popup").click(function (){
+        $(this).hide();
+    })
     $(".modal_menu-mobile").click(function() {
         $(this).removeClass("show-mobile");
         $("body").css("overflow", "visible");
@@ -200,13 +206,11 @@ $( document ).ready(function () {
         $(".overlay").fadeIn();
     });
     $("#shop_lecia .filter_shop .filter .plus").click(function (e){
-        $("div#filter_popup").addClass("active");
-        $(".overlay").fadeIn();
+        $("div#filter_popup").show();
         e.preventDefault();
     });
     $("div#filter_popup .btn_close").click(function() {
-        $("div#filter_popup").removeClass("active");
-        $(".overlay").fadeOut();
+        $("div#filter_popup").hide();
     });
     $(".overlay").click(function() {
         $("div#filter_popup").removeClass("active");
