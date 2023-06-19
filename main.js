@@ -152,6 +152,31 @@ $( document ).ready(function () {
             $('.top-bar .header-right .header-right_ul').appendTo('.menu-mobile .menu_category .account');
         }
     }
+    $(".number-minus").click(function(){
+        var qtt = $("#quantity").val()*1;
+        var min = $("#quantity").attr('min')*1;
+        if(qtt > min){
+            $('#quantity').val(qtt - 1);
+        }
+        else{
+            alert('Bạn chỉ có thể mua ít nhât ' + min + ' sản phẩm')
+        }
+    });
+    $(".number-plus").click(function(){
+        var qtt = $("#quantity").val()*1;
+        var max = $("#quantity").attr('max')*1;
+        if(qtt < max){
+            $('#quantity').val(qtt + 1);
+        }
+        else{
+            alert('Bạn chỉ có thể mua nhiều nhât ' + max + ' sản phẩm')
+        }
+    });
+    var timer;
+    $("#quantity").keyup(function(){
+        clearTimeout(timer);
+        timer = setTimeout(alertMax, 500)
+    });
 
 //end
     $(window).scroll(function() {
@@ -169,6 +194,7 @@ $( document ).ready(function () {
     });
     $("#vew_cart").click(function (){
        $(".show_cart").addClass("active");
+       $(this).addClass("color");
     });
     $("#vew_cart").click(function() {
         $(".overlay").fadeIn();
