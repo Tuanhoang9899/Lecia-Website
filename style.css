@@ -76,8 +76,11 @@ body a{
   }
 }
 @media(max-width: 992px){
-  div#popupHome{
-    display: none;
+  .header-menu .logo-pc{
+    padding: 15px 0 !important;
+  }
+  .header-menu i{
+    top: 40%;
   }
   .txt_benner-home {
     padding: 20px !important;
@@ -851,7 +854,7 @@ i.fas.fa-bars.nav-bar {
   position: absolute;
   right: 0;
   color: #000;
-  top: 50%;
+  top: 40%;
   font-size: 28px;
 }
 .item-highlights .pos-highlights:first-child {

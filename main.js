@@ -222,7 +222,6 @@ $(document).ready(function() {
         $('#popupHome').delay(2000).fadeIn();
         localStorage.setItem('popState','shown')
     }
-
     $('.close-poup').click(function(e) // You are clicking the close button
     {
         $('#popupHome').fadeOut(); // Now the pop up is hidden.
