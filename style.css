@@ -422,7 +422,7 @@ i.fas.fa-bars.nav-bar{
   height: 100%;
   transform: translateX(-100%);
   transition: .4s;
-  z-index: 2;
+  z-index: 10;
 }
 .menu-mobile {
   height: 100%;
