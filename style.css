@@ -313,7 +313,7 @@ ul.groupmenu-drop.slidedown {
   padding: 0 0 20px 0;
   z-index: 3;
   background: #fff;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
 }
@@ -1633,4 +1633,33 @@ div#filter_popup {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+}
+@media (max-width: 840px){
+  .modal-dialog {
+    width: 100% !important;
+  }
+  .modal-content {
+    padding: 44px 47px;
+  }
+  .form-popup {
+     padding: 0;
+  }
+}
+@media(max-width: 570px){
+  .claim, .thks {
+    padding: 12px 20px;
+  }
+  .title-popup h3 {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .title-popup i {
+    font-size: 16px;
+  }
+  .modal-content {
+    padding: 20px;
+  }
+  .btn-form-poup {
+    margin-top: 30px;
+  }
 }
